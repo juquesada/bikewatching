@@ -1,0 +1,27 @@
+body {
+  font: 100%/1.5 system-ui, sans-serif;
+  display: flex;
+  flex-flow: column;
+  max-width: 80em;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1em;
+  color: #233443;
+  background: #fafcfd;
+}
+header { display: flex; gap: 1em; align-items: baseline; }
+h1 { margin-block: .3em; }
+p { margin-block: .5em; }
+header label { margin-left: auto; min-width: 16em; }
+#time-slider { display: block; width: 100%; accent-color: steelblue; }
+#selected-time, #any-time { display: block; min-height: 1.5em; font-variant-numeric: tabular-nums; }
+[hidden] { display: none !important; }
+#any-time, .note, footer { color: #536778; }
+#status { font-size: .9em; }
+footer { font-size: .85em; margin-top: .5em; }
+a { color: #21618b; }
+@media (max-width: 650px) {
+  header { flex-direction: column; gap: .5em; }
+  header label { margin-left: 0; width: 100%; }
+}
